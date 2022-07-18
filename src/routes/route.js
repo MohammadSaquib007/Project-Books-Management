@@ -16,9 +16,9 @@ router.post('/login',userController.login)
 
 //---------------------bookApi --------------------
 
-router.post('/createBook',middleware,booksController.createBook)
-router.get('/fetch',middleware,booksController.getBook)
-router.get('/books/:bookId',middleware,booksController.bookDetails)
+router.post('/createBook',booksController.createBook)
+router.get('/fetch',booksController.getBook)
+router.get('/books/:bookId',booksController.bookDetails)
 router.put('/update/:bookId',middleware,booksController.updateBook)
 router.delete('/deleted/:bookId',middleware,booksController.removeBook)
 
